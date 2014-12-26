@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,93 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWf-3a-o0o">
+                                <rect key="frame" x="165" y="507" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="165" y="367" width="33" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qS-rL-xrx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-t7-Hd1">
+                                <rect key="frame" x="275" y="507" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="R4s-bf-f8j"/>
+                                </constraints>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="275" y="367" width="50" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrG-78-OO7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbb-hC-NG4">
+                                <rect key="frame" x="394" y="507" width="50" height="30"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact" misplaced="YES">
+                                    <rect key="frame" x="394" y="367" width="50" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="onRestart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIU-h0-P0p"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="D4m-hq-9U4" customClass="SnakeMainView">
+                                <rect key="frame" x="150" y="41" width="300" height="440"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Yg9-H4-P47">
+                                        <variation key="heightClass=compact" constant="440"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="440" id="k9O-Jk-GjV">
+                                        <variation key="heightClass=compact" constant="300"/>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="D4m-hq-9U4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9ik-oG-bRE"/>
+                            <constraint firstItem="D4m-hq-9U4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="250" constant="150" id="GYd-OZ-zJD">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jmc-t7-Hd1" secondAttribute="bottom" priority="250" constant="63" id="Ps0-FT-35R">
+                                <variation key="heightClass=compact" constant="20"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="97"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="Jmc-t7-Hd1" secondAttribute="centerX" id="UQV-od-8uq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="D4m-hq-9U4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Vzl-QY-mNZ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="57"/>
+                            </constraint>
+                            <constraint firstItem="Jmc-t7-Hd1" firstAttribute="top" secondItem="D4m-hq-9U4" secondAttribute="bottom" priority="250" constant="26" id="Ww1-Su-jSp">
+                                <variation key="heightClass=compact" constant="10"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="156"/>
+                            </constraint>
+                            <constraint firstItem="Jmc-t7-Hd1" firstAttribute="baseline" secondItem="NWf-3a-o0o" secondAttribute="baseline" priority="250" id="iY4-BP-33Q"/>
+                            <constraint firstItem="Jmc-t7-Hd1" firstAttribute="baseline" secondItem="Nbb-hC-NG4" secondAttribute="baseline" id="nZC-Qh-A0j"/>
+                            <constraint firstItem="Nbb-hC-NG4" firstAttribute="leading" secondItem="Jmc-t7-Hd1" secondAttribute="trailing" constant="69" id="xuC-Zy-r3n"/>
+                            <constraint firstItem="Jmc-t7-Hd1" firstAttribute="leading" secondItem="NWf-3a-o0o" secondAttribute="trailing" constant="77" id="ywA-xw-ABt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="snakeView" destination="D4m-hq-9U4" id="LXF-ak-Leb"/>
+                        <outlet property="startButton" destination="NWf-3a-o0o" id="Z6O-Im-qqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="336" y="276.75"/>
         </scene>
     </scenes>
 </document>

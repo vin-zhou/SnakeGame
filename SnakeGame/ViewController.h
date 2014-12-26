@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SnakeMainView.h"
 @interface ViewController : UIViewController
 
+
+- (IBAction)onStart:(id)sender;
+- (IBAction)onPause:(id)sender;
+- (IBAction)onRestart:(id)sender;
 
 @end
 

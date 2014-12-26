@@ -14,6 +14,13 @@
 		42B968091A4B9C0100F5E1EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B968081A4B9C0100F5E1EA /* Images.xcassets */; };
 		42B9680C1A4B9C0100F5E1EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42B9680A1A4B9C0100F5E1EA /* LaunchScreen.xib */; };
 		42B968181A4B9C0100F5E1EA /* SnakeGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B968171A4B9C0100F5E1EA /* SnakeGameTests.m */; };
+		42B968231A4B9C2700F5E1EA /* SnakeMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B968221A4B9C2700F5E1EA /* SnakeMainView.m */; };
+		42B968331A4C0D8700F5E1EA /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B968321A4C0D8700F5E1EA /* cherry.png */; };
+		42B968371A4C0D9100F5E1EA /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 42B968341A4C0D9100F5E1EA /* crash.wav */; };
+		42B968381A4C0D9100F5E1EA /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 42B968351A4C0D9100F5E1EA /* grass.png */; };
+		42B968391A4C0D9100F5E1EA /* gu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 42B968361A4C0D9100F5E1EA /* gu.mp3 */; };
+		42B9683C1A4CEE4000F5E1EA /* GameStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B9683B1A4CEE4000F5E1EA /* GameStatus.m */; };
+		42F94F3B1A4C02DB00F05F28 /* FKPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F94F3A1A4C02DB00F05F28 /* FKPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,16 @@
 		42B968111A4B9C0100F5E1EA /* SnakeGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42B968161A4B9C0100F5E1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B968171A4B9C0100F5E1EA /* SnakeGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeGameTests.m; sourceTree = "<group>"; };
+		42B968211A4B9C2700F5E1EA /* SnakeMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeMainView.h; sourceTree = "<group>"; };
+		42B968221A4B9C2700F5E1EA /* SnakeMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeMainView.m; sourceTree = "<group>"; };
+		42B968321A4C0D8700F5E1EA /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		42B968341A4C0D9100F5E1EA /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		42B968351A4C0D9100F5E1EA /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		42B968361A4C0D9100F5E1EA /* gu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gu.mp3; sourceTree = "<group>"; };
+		42B9683A1A4CEE4000F5E1EA /* GameStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStatus.h; sourceTree = "<group>"; };
+		42B9683B1A4CEE4000F5E1EA /* GameStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStatus.m; sourceTree = "<group>"; };
+		42F94F391A4C02DB00F05F28 /* FKPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKPoint.h; sourceTree = "<group>"; };
+		42F94F3A1A4C02DB00F05F28 /* FKPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 		42B967EF1A4B9C0100F5E1EA = {
 			isa = PBXGroup;
 			children = (
+				42B968311A4C0D7300F5E1EA /* Resources */,
 				42B967FA1A4B9C0100F5E1EA /* SnakeGame */,
 				42B968141A4B9C0100F5E1EA /* SnakeGameTests */,
 				42B967F91A4B9C0100F5E1EA /* Products */,
@@ -89,6 +107,12 @@
 				42B968081A4B9C0100F5E1EA /* Images.xcassets */,
 				42B9680A1A4B9C0100F5E1EA /* LaunchScreen.xib */,
 				42B967FB1A4B9C0100F5E1EA /* Supporting Files */,
+				42B968211A4B9C2700F5E1EA /* SnakeMainView.h */,
+				42B968221A4B9C2700F5E1EA /* SnakeMainView.m */,
+				42F94F391A4C02DB00F05F28 /* FKPoint.h */,
+				42F94F3A1A4C02DB00F05F28 /* FKPoint.m */,
+				42B9683A1A4CEE4000F5E1EA /* GameStatus.h */,
+				42B9683B1A4CEE4000F5E1EA /* GameStatus.m */,
 			);
 			path = SnakeGame;
 			sourceTree = "<group>";
@@ -117,6 +141,17 @@
 				42B968161A4B9C0100F5E1EA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42B968311A4C0D7300F5E1EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42B968341A4C0D9100F5E1EA /* crash.wav */,
+				42B968351A4C0D9100F5E1EA /* grass.png */,
+				42B968361A4C0D9100F5E1EA /* gu.mp3 */,
+				42B968321A4C0D8700F5E1EA /* cherry.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +234,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B968381A4C0D9100F5E1EA /* grass.png in Resources */,
 				42B968071A4B9C0100F5E1EA /* Main.storyboard in Resources */,
 				42B9680C1A4B9C0100F5E1EA /* LaunchScreen.xib in Resources */,
+				42B968391A4C0D9100F5E1EA /* gu.mp3 in Resources */,
+				42B968331A4C0D8700F5E1EA /* cherry.png in Resources */,
+				42B968371A4C0D9100F5E1EA /* crash.wav in Resources */,
 				42B968091A4B9C0100F5E1EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B968231A4B9C2700F5E1EA /* SnakeMainView.m in Sources */,
+				42B9683C1A4CEE4000F5E1EA /* GameStatus.m in Sources */,
 				42B968041A4B9C0100F5E1EA /* ViewController.m in Sources */,
+				42F94F3B1A4C02DB00F05F28 /* FKPoint.m in Sources */,
 				42B968011A4B9C0100F5E1EA /* AppDelegate.m in Sources */,
 				42B967FE1A4B9C0100F5E1EA /* main.m in Sources */,
 			);
@@ -414,6 +456,7 @@
 				42B9681D1A4B9C0100F5E1EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42B9681E1A4B9C0100F5E1EA /* Build configuration list for PBXNativeTarget "SnakeGameTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +465,7 @@
 				42B968201A4B9C0100F5E1EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
